@@ -1,0 +1,35 @@
+<ion-view title="Inicio" id="page1">
+	<ion-content>
+		<form id="form" name="form" novalidate="">
+		<div class="row">
+
+			<div class="col">
+				<div class="list">
+					<label for="" class="item item-input">
+						<input type="number" ng-model="numbers.one" placeholder="Número 1" required="">
+					</label>
+				</div>
+			</div>
+			<div class="col">
+				<div class="list">
+					<label for="" class="item item-input">
+						<input type="number" ng-model="numbers.two" placeholder="Número 2" required="">
+					</label>
+				</div>
+			</div>
+		</div>
+		<ul class="list">
+			<li class="item text-center"> <button ng-disabled="form.$invalid" href="#" class="button button-positive" ng-click="add(numbers)">+ SUMAR</button> </li>
+			<li class="item text-center"> <button ng-disabled="form.$invalid" href="#" class="button button-positive" ng-click="subtract(numbers)">- RESTAR</button> </li>
+			<li class="item text-center"> <button ng-disabled="form.$invalid" href="#" class="button button-positive" ng-click="multiply(numbers)" >X MULTIPLICAR</button> </li>
+			<li class="item text-center"> <button ng-disabled="form.$invalid" href="#" class="button button-positive" ng-click="divide(numbers) ">/ DIVIDIR </button> </li>
+		</ul>
+		<div class="spacer" style="margin-top: 40px;"></div>
+		<div class="list">
+			<label for="" class="item item-input">
+				<input type="text" ng-model="result" placeholder="Resultado">
+			</label>
+		</div>
+		</form>
+	</ion-content>
+</ion-view>
